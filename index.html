@@ -1,0 +1,333 @@
+<html>
+
+<head>
+  <style>
+    .nav li {
+      list-style-type: none;
+      padding: 1px;
+      border-radius: 5px;
+    }
+    
+    .nav ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    a:link,
+    a:visited {
+      display: inline-block;
+      width: 171px;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #808080;
+      text-align: center;
+      padding: 4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 5px;
+    }
+    
+    ul.nav a:link,
+    a:visited {
+      width: 171px;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #808080;
+      text-align: center;
+      padding: 4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 5px;
+    }
+    
+    ul.site-info li {
+      display: vertical-align;
+      list-style-type: none;
+      width: 150px;
+      height: 60px;
+      border-radius: 5px;
+      margin: 2px;
+    }
+    
+    ul.site-info a {
+      display: block;
+      padding: 4px;
+      text-transform: none;
+      font-size: 11px;
+      text-align: center;
+      font-family: Helvetica;
+      border-radius: 5px;
+    }
+    
+    a:hover,
+    a:active {
+      background-color: #FF7F50;
+    }
+    
+    body {
+      background-color: #D3D3D3;
+    }
+    
+    header {
+      background-color: #FF7F50;
+      font-family: Helvetica;
+      font-style: bold;
+      padding: 10px;
+      border: solid 4px #B22400;
+      border-radius: 25px;
+      text-align: center;
+      font-size: 22px;
+    }
+    
+    h1 {
+      font-size: 20px;
+      background-color: #FF7F50;
+      text-align: center;
+      font-family: Helvetica;
+      display: block;
+      height: 30px;
+      border-radius: 25px;
+      padding: 20px;
+      border: solid 2px #B22400;
+      list-style-type: none;
+    }
+    
+    h2 {
+      font-size: 15px;
+      text-align: center;
+      font-family: Helvetica;
+      display: block;
+      width: 200px;
+      background-color: #A9A9A9;
+      border-radius: 25px;
+      padding: 20px;
+      list-style-type: none;
+      border: solid 2px gray;
+    }
+    
+    h3 {
+      font-size: 12px;
+      text-align: left;
+      font-family: Helvetica;
+      list-style-type: none;
+    }
+    
+    .number {}
+    
+    .address {}
+    
+    .emergency {
+      background-color: yellow;
+      font-weight: bold;
+      font-family: Helvetica;
+    }
+  </style>
+
+  <title>New Orleans Mental & Behavioral Health Services</title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <div class="nav">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+        <!--Home Button will collapse all expanded information -->
+      </li>
+
+      <li>
+        <a href="#">Quick Search</a>
+      </li>
+      <!--Quick Search will make Quick Search fall down from top of page -->
+
+      <li>
+        <a href="#">About</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <header>New Orleans Mental and Behavioral Health Services</header>
+
+  <p>Welcome to the New Orleans Mental and Behavioral Health site! Please click the links directly below to find the asnwers to some frequently asked questions concerning mental/behavioral health</p>
+  <ul class="site-info">
+    <li>
+      <a href="www.thing.com">Welcome</a>
+    </li>
+    <li>
+      <a href="www.thing.com">What is mental/behavioral health?</a>
+    </li>
+    <li>
+      <a href="www.thing.com">How do I know if I or friend/family member needs mental/behavioral health services?</a>
+    </li>
+
+  </ul>
+
+  <!--each button will cause services under category name to expand from the side, alternating from left & right-justified expansions for 
+  each subcategory -->
+  <div>
+    <details>
+      <summary>
+        <h1>Hotlines</h1>
+        <!--have this slide out as a table-->
+      </summary>
+      
+      <ul>
+        <li>
+          <details>
+            <summary>
+              <h2>Name of Hotline 1</h2>
+            </summary>
+            <h3>Services Provided: </h3>
+            <div class="number">
+              <a href="tel:(1-800) 521-7128">(1-800)521-7128</a>
+            </div> 
+          </details>
+        </li>
+        
+        <li>
+          <details>
+            <summary>
+              <h2>Hotline Name 2</h2>
+            </summary>
+            <h3>Services Provided: </h3>
+            <div class="number">
+              <a href="tel:(1-800) 352-9996">(1-800)352-9996</a> 
+            </div>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary>
+              <h2>Hotline Name 3</h2>
+            </summary>
+            <h3>Services Provided:</h3>
+            <div class="number">
+              <a href="tel:(1-800) 234-0420">(1-800)234-0420</a>
+            </div>
+          </details>
+        </li>
+      </ul>
+      
+    </details>
+  </div>
+
+  <div>
+    <details>
+      <summary>
+        <h1>Crisis Services</h1>
+      </summary>
+      <details>
+        <summary>
+          <h2>Metropolitan Human Services District- Crisis Unit</h2>
+        </summary>
+        <div class="number">Contact Number: <a href="tel:(504) 123-4567">(504)123-4567</a></div>
+        <div class="site-info">
+          <p>The Metropolitan Human Services District (MHSD) provides urgent access to clinical services for individuals in mental health or substance abuse related crises. The MHSD Crisis Line includes 24-hour / 7 days a week crisis triage over the telephone.
+            Access to trained mental health professionals is open to everyone in the community.</p>
+          <p>The MHSD Crisis Response Team can respond to crisis situations throughout Orleans Parish. The Crisis Response Team can be accessed through the MHSD Crisis Line. The MHSD Crisis Stabilization Unit provides services for individuals undergoing
+            behavioral health crises including access to 5 respite beds for men and women.</p>
+        </div>
+      </details>
+    </details>
+  </div>
+  
+  <div>
+    <details>
+      <summary>
+        <h1>Detox Services</h1>
+      </summary>
+      <ul>
+        <li>
+          <details>
+            <summary>
+              <h2>Site 1</h2>
+            </summary>
+            <div class="address">
+              <h3>Address: </h3>
+            </div>
+            
+            <div class="number">
+              <a href="tel:(504)123-4567">Contact Number: (504)123-4567</a>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary><h2>Site 2</h2></summary>
+            
+            <div class="address">
+              <p><h3>Address:</h3></p>
+            </div>
+            
+            <div="number">
+              <a href="tel:(504)123-4567">Contact Number: (504)123-4567</a>
+            </div>
+            
+            
+            </div>
+          </details>
+        </li>
+      </ul>
+    </details>
+  </div>
+  <div>
+    <details>
+      <summary>
+        <h1>Hospital-Based Services</h1>        
+      </summary>
+      <ul>
+        <!--insert icons for adult, child, fam-->
+        <li>
+          <h2>Site Name</h2></li>
+        <p>
+          <h3>Address: </h3></p>
+        <p>
+          <h3>Contact Number: </h3></p>
+        <p>
+          <h3>Services:</h3></p>
+        <p>
+          <h3>Population Served: </h3></p>
+        <p>
+          <h3>Languages: </h3></p>
+        <p>
+          <h3>Fees: </h3></p>
+      </ul>
+    </details>
+    <details>
+      <summary>
+        <h1>Clinics & Primary Care</h1>
+      </summary>
+      <ul>
+        <li>
+          Site 1
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+            Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+            In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+        </li>
+        <li>
+          Site 2
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+            Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+            In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+        </li>
+        <li>
+          Site 3
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+            Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+            In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+        </li>
+      </ul>
+    </details>
+  </div>
+</body>
+
+</html>
